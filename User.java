@@ -18,8 +18,16 @@ public class User implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
+    
+    //********this is a edit **************
     @Column(length = 200,nullable = true,name = "name")
     private String name;
     @Column(length = 4,nullable = true,name = "age")
     private Integer age;
+    
+    
+    public void demo1(){
+        System.out.println("hello");
+    
+    }
 }
